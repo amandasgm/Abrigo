@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de adoção</title>
-    <link rel="stylesheet" href="../static/geral.css">
+    <title>Sugestões</title>
+    <link rel="stylesheet" href="../static/sugestão.css">
     <link rel="stylesheet" href="../static/media_query.css">
     <script src="../static/scrip.js"></script>
 </head>
@@ -18,7 +18,7 @@
             <li><a href="../../app_usuarios/templantes/adoção.html" class="link">Formulario de adoção</a></li>
             <li><a href="../../app_animais/templates/perro.html" class="link">Doguinhos</a></li>
             <li><a href="../../app_animais/templates/gatos.html" class="link">Gatinhos</a></li>
-            <li><a href="../../app_voluntarios/templates/voluntarios.html" class="link">Voluntários</a></li>
+            <li><a href="#" class="link">Voluntários</a></li>
         </ul>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" onclick="Aparecer()"></i>
@@ -34,47 +34,28 @@
     <main class="main">
         <div class="conteiner">
             <div class="form_img">
-                <img src="../static/img/undraw_everyday_life_re_1lfb.svg" alt="">
+                <img src="imagens/undraw_opinion_re_jix4.svg" alt="">
             </div>
             <div class="form">
                 <form action="POST">
                     <div class="form_header">
-                        <h1>Formulario de Adoção</h1>
+                        <h1>Deixe sua sugestão</h1>
                     </div>
                     <div class="input_group">
                         <div class="input_box">
-                            <label for="nome">Nome completo</label>
-                            <input type="text" name="nome" id="nome" placeholder="digite seu nome completo" required>
+                            <label for="nome">Seu nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="digite seu nome " required>
                         </div>
                         <div class="input_box">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="digite seu email" required>
                         </div>
                         <div class="input_box">
-                            <label for="celular">Telefone</label>
-                            <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
+                            <label for="sugestão">Sua sugestão</label>
+                            <input type="text" name="sugestão" id="sugestão" placeholder="digite aqui sua sugestão">
                         </div>
-                        <div class="input_box">
-                            <label for="endereço">Endereço</label>
-                            <input type="text" name="endereço" id="endereço" placeholder="digite seu endereço ">
-                        </div>
-                        <div class="input_box">
-                            <label for="cpf">CPF</label>
-                            <input type="number" name="cpf" id="cpf" placeholder="xxx-xxx-xxx.xx">
-                        </div>
-                        <div class="input_box">
-                            <label for="motivo">Motivo</label>
-                            <input type="" name="motivo" id="motivo" placeholder="Conte-nos um pouco sobre o motivo da adoção">
-                        </div>
-                        <div class="input_box">
-                            <label for=outros_animais">Possui outros animais?</label>
-                            <input type="text" name="outros_animais" id="outros_animais" placeholder="sim ou não">
-                        </div>
-                        <div class="input_box">
-                            <label for=interessado">Qual seu bichinho de interesse?</label>
-                            <input type="text" name="interessado" id="interessado" placeholder="digite aqui o nome dele">
-                        </div>
-            
+                    
+                        
                     </div>
                     <div class="continue_button">
                         <button type="submit"><a href="#">Enviar</a></button>
