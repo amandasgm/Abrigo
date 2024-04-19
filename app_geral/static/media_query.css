@@ -1,0 +1,96 @@
+@font-face{
+    font-family: 'Catcut'; /* Nome da fonte  */
+    src: url(fontes/Catcut.otf) format(opentype); /* pasta e formato da fonte */
+    font-weight: normal; /* finura da fonte */
+}
+@font-face {
+    font-family: 'Gatha';
+    src: url(fontes/ZTGatha-SemiBold.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cafe';
+    src: url(fontes/Louis\ George\ Cafe\ Light.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root{ /* cores e fontes padrão */
+    --bege: #D2C8BC; 
+    --marrom:#866552;
+    --preto1: #292929;
+    --pretoall: black;
+    --branco: white;
+
+    --fonte_titulos:'Gatha', cursive;
+    --fonte_destaque: 'Catcut', cursive;
+    --fonte_texto: 'Cafe', cursive;
+}
+
+
+@media (max-width: 650px) {
+    #navlist{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: var(--bege);
+        gap: 0;
+        overflow: hidden;
+        margin: 0px 10px;
+
+    }
+    nav ul li{
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .menu-icon{
+        display: block;
+        color: #866552;
+        cursor: pointer;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+
+    #txt1{
+        font-size: 40px;
+    }
+
+    .img_linha{
+        width: 110%;
+        margin-left: -30px;
+        text-align: center;
+    }
+
+    #conteudo_3{
+        display: block;
+    }
+    .box1{
+        width: 100%;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .texto{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        color: var(--marrom);
+    }
+
+    #txt3{
+        font-size: 20px;
+
+    }
+
+    #conteudo_4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+
+
+}

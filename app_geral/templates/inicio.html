@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Adoção</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../static/geral.css">
+    <link rel="stylesheet" href="../static/media_query.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h2>We Petz</h2>
+        </div>
+        <ul id="navlist">
+            <li><a href="inicio.html" class="link">Página Inicial</a></li>
+            <li><a href="../../app_usuarios/templantes/adoção.html" class="link">Formulario de adoção</a></li>
+            <li><a href="../../app_animais/templates/perro.html" class="link">Doguinhos</a></li>
+            <li><a href="../../app_animais/templates/gatos.html" class="link">Gatinhos</a></li>
+            <li><a href="#" class="link">Voluntários</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="Aparecer()"></i>
+        </div>
+        
+    </nav>
+    <div class="conteudo_1">
+        <h1 id="txt1">Adote um amor</h1>
+        <img src="imagens/gato_parede.jpg" alt="">
+    </div>
+
+    <div id="conteudo_2">
+        <h2 id="txt2" >COMO FUNCIONAMOS</h2>
+        <p id="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dolorum odit esse doloremque dignissimos quos sapiente tempore consectetur ad, consequatur et dolorem, accusantium repudiandae eius ab cum facilis quo quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor necessitatibus voluptatibus atque, asperiores non illo similique odio! Assumenda maiores in commodi adipisci unde blanditiis error harum dignissimos saepe repudiandae.</p>
+
+        <img class="img_linha" src="imagens/linha_adoção.png" alt="">
+    </div>
+
+    <div id="conteudo_3">
+        <div class="box1">
+            <img src="imagens/gato_parede_amarelo.jpg" alt="">
+        </div>
+
+        <div class="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias, suscipit, dolorem nesciunt enim quaerat, odio eum soluta voluptates ut totam illo repudiandae debitis laudantium. Sequi possimus odio assumenda illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt sequi id soluta sapiente quia ad saepe in non earum nobis eveniet voluptas perferendis minima, molestias aliquid animi qui facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio iusto officia consectetur ipsam, necessitatibus saepe dicta architecto magnam voluptatum maxime repudiandae ea hic soluta autem enim iure corporis itaque.
+
+        </div>
+        
+        <div class="box2">
+            <h2 id="txt3">PARA ADOÇÃO</h2>
+            <p id="esp">(Clique na especie desejada)</p>
+            <a href="../../app_animais/templates/gatos.html"><img class="opc" src="imagens/icons8-gato-100.png" alt="Icone_gato"></a>
+            <a href="../../app_animais/templates/perro.html"><img class="opc" src="imagens/icons8-perro-100.png" alt="Icone_perro"></a>
+        </div>
+    </div>
+
+    <div id="conteudo_4">
+        <a class="forms1" href="#">VOLUNTARIADO</a>
+        <a class="forms2" href="../../app_usuarios/templantes/adoção.html">FORMULÁRIO DE ADOÇÃO</a>
+        <a class="forms3" href="#">DEIXE PARA ADOÇÃO</a>
+        <a class="forms4" href="#">SUA SUGESTÃO</a>
+    </div>
+
+    <script>
+        let navlist = document.getElementById("navlist")
+        navlist.style.maxHeight = "0px";
+
+        function Aparecer(){
+            if(navlist.style.maxHeight == "0px")
+            {
+                navlist.style.maxHeight = "300px";
+            }
+            else{
+                navlist.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
