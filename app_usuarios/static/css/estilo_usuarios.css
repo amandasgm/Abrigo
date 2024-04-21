@@ -12,14 +12,14 @@
 
 @font-face {
     font-family: 'Cafe';
-    src: url(fontes/Louis\ George\ Cafe\ Light.ttf ) format(truetype);
+    src: url(fontes/Louis\ George\ Cafe\ Light.ttf) format(truetype);
     font-weight: normal;
 }
 
 :root{ /* cores e fontes padrão */
     --bege: #D2C8BC; 
     --marrom:#866552;
-    --laranja: #F9A826;
+    --laranja: #f39c38;
     --preto1: #292929;
     --pretoall: black;
     --branco: white;
@@ -116,11 +116,11 @@ main{
     justify-content: center;
     align-items: center;
     background-color: var(--bege);
-    padding:1rem ; 
+    padding:1rem; 
 }
 
 .form_img img{
-    width: 37rem ;
+    width: 28rem ;
 }
 
 .form{
@@ -174,7 +174,7 @@ main{
 }
 
 .input_box input:hover{
-    background-color: #ffe3b6;
+    background-color: #fcd1a1;
 }
 
 .input_box label{

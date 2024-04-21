@@ -1,0 +1,202 @@
+
+@font-face{
+    font-family: 'Catcut'; /* Nome da fonte  */
+    src: url(fontes/Catcut.otf) format(opentype); /* pasta e formato da fonte */
+    font-weight: normal; /* finura da fonte */
+}
+@font-face {
+    font-family: 'Gatha';
+    src: url(fontes/ZTGatha-SemiBold.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cafe';
+    src: url(fontes/Louis\ George\ Cafe\ Light.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root{ /* cores e fontes padrão */
+    --bege: #D2C8BC; 
+    --marrom:#866552;
+    --laranja: #F9A826;
+    --preto1: #292929;
+    --pretoall: black;
+    --branco: white;
+
+    --fonte_titulos:'Gatha', cursive;
+    --fonte_destaque: 'Catcut', cursive;
+    --fonte_texto: 'Cafe', cursive;
+}
+
+*{ /* retira todas as margens e paddins pré definidos */
+    margin: 0px;
+    padding: 0px;
+}
+/* configuração responsiva para celular */ 
+
+body{
+    margin: auto;
+    background-color: var(--branco);
+}
+
+.navbar{
+    min-width: 85%;
+    height: 10px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bege);
+    margin: 10px 10px;
+}
+.menu-icon{
+    display: none;
+}
+
+.logo{
+    font-family: var(--fonte_titulos);
+    font-size: 20px;
+    color: var(--marrom);
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+#navlist{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-size: 15px;
+    color: var(--marrom);
+    font-weight: bold;
+    
+}
+
+.link:hover{
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+/*main{
+    background-color:#d2c8bcb9;
+    margin: auto;
+    max-width: 80vw;
+    height: 70vh;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 40px;
+}*/
+
+main h1{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-family: var(--fonte_titulos);
+    margin-top: 40px;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+main p{
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+    font-family: var(--fonte_titulos);
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 2%;
+    border-radius: 30px;
+    background-color: #f3efe8;
+    
+}
+
+.boxes{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.075);
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 440px;
+}
+
+.imagem{
+    width: 220px;
+    
+}
+
+.imagem img{
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px black;
+    border-radius: 10px;
+}
+
+.linhas{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.infos h3 p{
+    display: inline;
+    background-color: var(--branco);
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 2px 5px;
+    font-family: var(--fonte_titulos);
+    font-size: 16px;
+    border-radius: 5px;
+   
+}
+
+.infos h3{
+    margin-bottom: 25px;
+    align-items: center;
+    font-family: var(--fonte_titulos);
+}
+
+section{
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    font-family: var(--fonte_titulos);
+}
+section h1{
+    margin-bottom: 20px;
+}
+
+section div a{
+    background-color: #866552;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section div a:hover{
+    background-color: var(--bege);
+    transition: 0.1s;
+}
+
+footer{
+    background-color: #866552;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
+

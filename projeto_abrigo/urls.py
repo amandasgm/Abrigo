@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app_geral.views import inicio
+from app_geral.views import inicio, sugestão, sucesso
 from app_usuarios.views import usuario
 from app_animais.views import gatos, perros
 from app_voluntarios.views import voluntarios
@@ -31,7 +31,9 @@ urlpatterns = [
     path('usuarios/', usuario, name='usuarios'),
     path('voluntarios/', voluntarios, name='voluntarios'),
     path('gatos/', gatos, name='gatos'),
-    path('perros/', perros, name='cachorros')
+    path('perros/', perros, name='cachorros'),
+    path('sugestão/', sugestão, name='sugestão'),
+    path('sucesso/', sucesso, name='sucesso')
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )+ [
     # Definindo o caminho para servir arquivos estáticos durante o desenvolvimento
     # Isso serve arquivos estáticos em STATIC_URL (ex: '/static/') para STATIC_ROOT (ex: 'static/')

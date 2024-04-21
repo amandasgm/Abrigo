@@ -30,18 +30,24 @@
             <i class="fa-solid fa-bars" onclick="Aparecer()"></i>
         </div>
     </nav>
+    
 
+    
     <main class="main">
         <div class="conteiner">
             <div class="form_img">
                 <img src="../static/img/undraw_different_love_a-3-rg (2).svg" alt="">
             </div>
             <div class="form">
-                <form action="POST">
+                {% if sucesso %}
+                    <p class="alerta_sucesso">Cadastro efetuado com sucesso</p>
+                {% else %}
+                <form action="" method="POST" id="form">
                     {% csrf_token %}
                     <div class="form_header">
                         <h1>Seja um Voluntario</h1>
                     </div>
+                    
                     <div class="input_group">
                         <div class="input_box">
                             <label for="nome">Nome completo</label>
@@ -66,14 +72,16 @@
 
                         <div class="input_box">
                             <label for="profissão">Profissão</label>
-                            <input type="number" name="profissão" id="profissão" placeholder="digite sua profissão">
+                            <input type="text" name="profissão" id="profissão" placeholder="digite sua profissão">
                         </div>
                         
                     </div>
                     <div class="continue_button">
-                        <button type="submit"><a href="#">Enviar</a></button>
+                        <button type="submit" id="botão_enviar">Enviar</button>
                     </div>
+                    
                 </form>
+                {% endif %}
             </div>
         </div>
     </main>
@@ -91,9 +99,11 @@
                 navlist.style.maxHeight = "0px";
             }
         }
+
+
         
     </script>
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>

@@ -25,7 +25,6 @@ class Adotantes(models.Model):
     endereço = models.CharField(max_length=200)
     cpf = models.CharField(max_length=50)
     motivo = models.CharField(max_length=50)
-    motivo = models.CharField(max_length=50)
     outros_animais = models.CharField(max_length=3, choices=OUTROS)
     interessado = models.CharField(max_length=50)
     ativo = models.BooleanField(default=True)

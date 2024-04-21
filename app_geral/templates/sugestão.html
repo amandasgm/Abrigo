@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,17 +29,15 @@
 
 
 
-
-
-
-
     <main class="main">
         <div class="conteiner">
             <div class="form_img">
-                <img src="imagens/undraw_opinion_re_jix4.svg" alt="">
+                <img src="../static/imagens/undraw_opinion_re_jix4.svg" alt="">
             </div>
             <div class="form">
                 <form action="POST">
+                    {% csrf_token %}
+
                     <div class="form_header">
                         <h1>Deixe sua sugestão</h1>
                     </div>

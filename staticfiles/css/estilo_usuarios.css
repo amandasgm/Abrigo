@@ -6,13 +6,13 @@
 }
 @font-face {
     font-family: 'Gatha';
-    src: url(../fontes/ZTGatha-SemiBold.ttf) format(truetype);
+    src: url(fontes/ZTGatha-SemiBold.ttf) format(truetype);
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Cafe';
-    src: url(fontes/Louis\ George\ Cafe\ Light.ttf ) format(truetype);
+    src: url(fontes/Louis\ George\ Cafe\ Light.ttf) format(truetype);
     font-weight: normal;
 }
 
@@ -116,11 +116,11 @@ main{
     justify-content: center;
     align-items: center;
     background-color: var(--bege);
-    padding:1rem ; 
+    padding:1rem; 
 }
 
 .form_img img{
-    width: 37rem ;
+    width: 28rem ;
 }
 
 .form{
@@ -174,7 +174,7 @@ main{
 }
 
 .input_box input:hover{
-    background-color: #ffe3b6;
+    background-color: #fcd1a1;
 }
 
 .input_box label{
