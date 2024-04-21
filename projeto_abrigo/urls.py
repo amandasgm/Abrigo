@@ -16,14 +16,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app_geral.views import geral
+from app_geral.views import inicio
 from app_usuarios.views import usuario
+from app_animais.views import gatos, perros
+from app_voluntarios.views import voluntarios
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', inicio, name='iniciar'),
-    path('usuarios/',usuarios, name=usuarios),
-    path('animais/', animais, name=animais),
-]
+    path('usuarios/', usuario, name='usuarios'),
+    path('voluntarios/', voluntarios, name='voluntarios'),
+    path('gatos/', gatos, name='gatos'),
+    path('perros/', perros, name='cachorros')
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )+ [
+    # Definindo o caminho para servir arquivos estáticos durante o desenvolvimento
+    # Isso serve arquivos estáticos em STATIC_URL (ex: '/static/') para STATIC_ROOT (ex: 'static/')
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+

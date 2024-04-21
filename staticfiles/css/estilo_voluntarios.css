@@ -1,0 +1,255 @@
+
+@font-face{
+    font-family: 'Catcut'; /* Nome da fonte  */
+    src: url(fontes/Catcut.otf) format(opentype); /* pasta e formato da fonte */
+    font-weight: normal; /* finura da fonte */
+}
+@font-face {
+    font-family: 'Gatha';
+    src: url(fontes/ZTGatha-SemiBold.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cafe';
+    src: url(fontes/Louis\ George\ Cafe\ Light.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root{ /* cores e fontes padrão */
+    --bege: #D2C8BC; 
+    --marrom:#866552;
+    --laranja: #f50057;
+    --preto1: #292929;
+    --pretoall: black;
+    --branco: white;
+
+    --fonte_titulos:'Gatha', cursive;
+    --fonte_destaque: 'Catcut', cursive;
+    --fonte_texto: 'Cafe', cursive;
+}
+
+*{ /* retira todas as margens e paddins pré definidos */
+    margin: 0px;
+    padding: 0px;
+}
+/* configuração responsiva para celular */ 
+
+body{
+    margin: auto;
+    background-color: var(--branco);
+}
+
+.navbar{
+    min-width: 85%;
+    height: 10px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bege);
+    margin: 10px 10px;
+}
+.menu-icon{
+    display: none;
+}
+
+.logo{
+    font-family: var(--fonte_titulos);
+    font-size: 20px;
+    color: var(--marrom);
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+#navlist{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-size: 15px;
+    color: var(--marrom);
+    font-weight: bold;
+    
+}
+
+.link:hover{
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+/*main{
+    background-color:#d2c8bcb9;
+    margin: auto;
+    max-width: 80vw;
+    height: 70vh;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 40px;
+}*/
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--branco);
+}
+
+.conteiner{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 8px 10px var(--marrom) ;
+}
+
+.form_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bege);
+    padding:1rem; 
+}
+
+.form_img img{
+    width: 28rem ;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 3rem;
+}
+
+.form_header{
+    font-family: var(--fonte_titulos);
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_header h1::after{
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    background-color:var(--laranja);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input_group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input_box{
+    display: flex; 
+    flex-direction: column; /* pra ficar um embaixo do outro */
+    margin-bottom: 1.8rem;
+
+}
+
+.input_box input{
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius:10px;
+    box-shadow: 1px 1px 6px var(--bege) ;
+}
+
+.input_box input:hover{
+    background-color: #ffbbb6;
+}
+
+.input_box label{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--preto1);
+    font-family: var(--fonte_texto);
+}
+
+.input_box input::placeholder{
+    color: rgba(0, 0, 0, 0.205);
+    font-family: var(--fonte_titulos);
+}
+
+.continue_button button{
+    width: 100%;
+    border: none;
+    padding: 0.42rem;
+    margin-top: -20px;
+    background-color: var(--bege);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue_button button:hover{
+    background-color: var(--laranja);
+    transition: 0.2s;
+}
+
+.continue_button button a{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--preto1);
+    font-family: var(--fonte_titulos);
+}
+
+@media screen and (max-width: 1330px) { /* tablets */
+    .form_img{
+        display: none;
+    }
+    
+    .conteiner{
+        width: 70%;
+        height: 80vh;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .conteiner{
+        display: block;
+        width: 50%; /* ele vai ocupar quase toda sua área, sobrando so uma borda */
+        height: 80vh;
+        box-shadow: none;
+    }
+
+    .input_group{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 100% ;
+        padding-right: 5rem;
+        margin: auto;
+    }
+
+    .continue_button button{
+        width: 74%;
+        text-align: center;
+    }
+    
+}
+
+
